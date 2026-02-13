@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stg_taxi_trips
+    description: "Cleaned taxi trips from RAW layer"
+    columns:
+      - name: pickup_datetime
+        tests:
+          - not_null
+      - name: fare_amount
+        tests:
+          - not_null
+      - name: passenger_count
+        tests:
+          - not_null
